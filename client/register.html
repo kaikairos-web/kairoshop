@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register — KairoShop</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/css/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <div class="auth-page">
+    <div class="auth-card glass">
+      <h1>Create Account</h1>
+      <p class="subtitle">Join KairoShop for premium bike parts</p>
+      <form id="register-form">
+        <div class="form-group">
+          <label for="full_name">Full Name</label>
+          <input type="text" id="full_name" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" class="form-control" required minlength="6">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%">Register</button>
+      </form>
+      <p style="text-align:center;margin-top:1rem" class="text-muted">
+        Have an account? <a href="/login.html">Login</a>
+      </p>
+    </div>
+  </div>
+  <script src="/js/config.js"></script>
+  <script src="/js/api.js"></script>
+  <script src="/js/auth.js"></script>
+  <script src="/js/ui.js"></script>
+  <script src="/js/pages/auth.js"></script>
+</body>
+</html>
+
+

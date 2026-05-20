@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout — KairoShop</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/css/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body class="public-page">
+  <div id="site-header"></div>
+  <main class="container section">
+    <h1 class="page-title">Checkout</h1>
+    <div style="display:grid;grid-template-columns:1fr 360px;gap:2rem">
+      <form id="checkout-form" class="glass-card">
+        <h3 style="margin-bottom:1rem">Shipping Details</h3>
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" id="ship-name" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label>Address</label>
+          <textarea id="ship-address" class="form-control" rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+          <label>Phone</label>
+          <input type="tel" id="ship-phone" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Place Order</button>
+      </form>
+      <div class="checkout-summary glass-card" id="checkout-summary"></div>
+    </div>
+  </main>
+  <div id="bottom-nav"></div>
+  <script src="/js/config.js"></script>
+  <script src="/js/api.js"></script>
+  <script src="/js/auth.js"></script>
+  <script src="/js/ui.js"></script>
+  <script src="/js/components.js"></script>
+  <script src="/js/cart.js"></script>
+  <script src="/js/pages/checkout.js"></script>
+</body>
+</html>
+
+

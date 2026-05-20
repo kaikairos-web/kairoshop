@@ -1,0 +1,20 @@
+{
+  "name": "kairoshop",
+  "version": "1.0.0",
+  "description": "KairoShop - Premium bike parts e-commerce",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node --watch server/server.js"
+  },
+  "keywords": ["ecommerce", "bikes", "supabase"],
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "multer": "^1.4.5-lts.1"
+  }
+}
