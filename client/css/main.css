@@ -645,17 +645,6 @@ h3 { font-size: 1rem; }
   overflow: hidden;
 }
 
-.stat-card::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 80px;
-  height: 80px;
-  background: radial-gradient(circle, rgba(34, 211, 238, 0.2), transparent);
-  border-radius: 50%;
-}
-
 .stat-label { color: var(--text-muted); font-size: 0.875rem; margin-bottom: 0.5rem; }
 .stat-value { font-size: 1.75rem; font-weight: 700; color: var(--cyan); }
 .stat-change { font-size: 0.8rem; color: var(--success); margin-top: 0.25rem; }
