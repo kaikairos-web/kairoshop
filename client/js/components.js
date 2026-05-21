@@ -21,7 +21,8 @@ const Components = {
     const img = product.image_url || '/assets/placeholder-bike.svg';
     return `
       <article class="glass-card product-card" data-id="${product.id}">
-        <a href="/product-detail.html?id=${product.id}">
+        <a href="/product-detail.html?id=${product.id}" class="product-image-wrap">
+          <div class="product-image-bg" style="background-image:url('${img}')"></div>
           <img class="product-image" src="${img}" alt="${product.name}"
             onerror="this.src='/assets/placeholder-bike.svg'">
         </a>

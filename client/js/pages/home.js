@@ -53,19 +53,22 @@ function initCarousel(products) {
 
   track.innerHTML = products
     .map(
-      (p) => `
-    <div class="carousel-slide glass-card">
-      <div>
+      (p) => {
+        const img = p.image_url || '/assets/placeholder-bike.svg';
+        return `
+    <div class="carousel-slide" style="background-image:url('${img}')">
+      <div class="carousel-slide-bg" style="background-image:url('${img}')"></div>
+      <div class="carousel-slide-content">
         <span class="text-cyan">Featured</span>
         <h2 style="margin:0.5rem 0 1rem">${p.name}</h2>
         <p class="text-muted" style="margin-bottom:1rem">${p.description?.slice(0, 120)}...</p>
         <p class="product-price">${UI.formatPrice(p.price)}</p>
         <a href="/product-detail.html?id=${p.id}" class="btn btn-primary" style="margin-top:1rem">View Product</a>
       </div>
-      <img src="${p.image_url || '/assets/placeholder-bike.svg'}" alt="${p.name}"
-        onerror="this.src='/assets/placeholder-bike.svg'">
+      <img src="${img}" alt="${p.name}" onerror="this.src='/assets/placeholder-bike.svg'">
     </div>
-  `
+  `;
+      }
     )
     .join('');
 
