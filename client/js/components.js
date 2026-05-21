@@ -23,7 +23,7 @@ const Components = {
       <article class="glass-card product-card" data-id="${product.id}">
         <a href="/product-detail.html?id=${product.id}">
           <img class="product-image" src="${img}" alt="${product.name}"
-            onerror="this.src='https://images.unsplash.com/photo-1485965120181-e220f721d03f?w=400'">
+            onerror="this.src='/assets/placeholder-bike.svg'">
         </a>
         <a href="/product-detail.html?id=${product.id}">
           <h3 class="product-name">${product.name}</h3>

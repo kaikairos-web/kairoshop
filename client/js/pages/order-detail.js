@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', async () => {
               <img
                 src="${item.product?.image_url || '/assets/placeholder-bike.svg'}"
                 alt="${item.product?.name || 'Product'}"
-                onerror="this.src='https://images.unsplash.com/photo-1485965120181-e220f721d03f?w=80'"
+                onerror="this.src='/assets/placeholder-bike.svg'"
               >
               <div class="cart-item-info">
                 <p style="font-weight:600">${item.product?.name || 'Unknown product'}</p>

@@ -14,7 +14,7 @@
     const stock = UI.stockStatus(p.stock);
     root.innerHTML = `
       <img class="product-detail-image glass-card" src="${p.image_url || '/assets/placeholder-bike.svg'}" alt="${p.name}"
-        onerror="this.src='https://images.unsplash.com/photo-1485965120181-e220f721d03f?w=600'">
+        onerror="this.src='/assets/placeholder-bike.svg'">
       <div>
         <span class="text-cyan">${p.category}</span>
         <h1 style="margin:0.5rem 0 1rem">${p.name}</h1>

@@ -63,7 +63,7 @@ function initCarousel(products) {
         <a href="/product-detail.html?id=${p.id}" class="btn btn-primary" style="margin-top:1rem">View Product</a>
       </div>
       <img src="${p.image_url || '/assets/placeholder-bike.svg'}" alt="${p.name}"
-        onerror="this.src='https://images.unsplash.com/photo-1485965120181-e220f721d03f?w=600'">
+        onerror="this.src='/assets/placeholder-bike.svg'">
     </div>
   `
     )
